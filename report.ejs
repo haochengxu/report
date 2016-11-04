@@ -1,0 +1,541 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="telephone=no" name="format-detection">
+  <title>测评报告</title>
+  <!-- <link href="../css/reset.css" rel="stylesheet" type="text/css"/> -->
+  <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="../css/weui.css" rel="stylesheet" type="text/css"/>
+  <style>
+    img {
+      width: 115px;
+      height: 130px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    h1 {
+      font-size: 35px;
+      padding: 100px 0 80px 0;
+      background-color: rgb(68, 112, 233);
+      color: white;
+    }
+    h1 span {
+      position: relative;
+      top: 15px;
+      font-size: 18px;
+    }
+    .start_page {
+      text-align: center;
+      font-size: 16px;
+    }
+    .question p {
+      letter-spacing: 1px;
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+
+      background-color: white;
+      padding: 15px;
+      /*border: 2px solid rgb(68, 112, 233);*/
+    }
+    p:first-child {
+      border-bottom: none;
+    }
+    .weui-cell_select {
+      width: 40%;
+      margin: 0 auto;
+    }
+    .button-sp-area {
+      margin: 0 auto;
+      padding: 21px 0;
+      width: 40%;
+    }
+    .weui-btn_plain-default {
+      color: white;
+      border: none;
+      background-color: rgb(68, 112, 233);
+    }
+    .aOverB, .aEqualB, .less, .more, .before-over-after, .before-equal-after, .before-smaller-after, .more3{
+      display: none;
+    }
+    #chart1, #chart3{
+    max-width: 400px;
+    height: 400px;
+    width: 55%;
+    margin-top: 10px;
+    margin-left: 10%;
+    }
+    #chart2 {
+      margin: 0 auto;
+      margin-left: 20px;
+      margin-top: 40px;
+      height: 400px;
+    }
+    .part-title {
+      font-size: 20px;
+    }
+    .info {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1> 开启爱的智慧测评报告<br />
+    <span class="info">
+      <span>姓名: <%= name %></span>
+      <span>测评时间: <%= time %></span>
+    </span>
+  </h1>
+
+  <div class="question question1">
+    <p class="part-title">
+      爱的选择体验
+    </p>
+    <div id="chart1">
+    </div>
+    <p>
+      在本次“爱的选择”体验中，对于在某一场景下，你希望放下的过去伤害你的人，
+      1分是彻底的不宽恕，不放下，感受非常不舒服。10分是你感受到生命获得了轻盈，获得了放下之后的轻松。
+      你在体验前的“放下”分数：<span id="A"></span> 
+      你在体验后的“放下”分数：<span id="B"></span>
+    </p>
+    <p class="aOverB">
+      一、根据你的体验分数，在本次Axun带领的心智升级体验中，你的放下分数不仅没有提升还降低了。
+      <br />二、如果你不是和我们开玩笑的话。只有一种可能: 就是你在回忆过去的伤害时，过于深入，使得你沉浸在伤害造成的身体感受不舒服中，你反而难以投入后续的体验。这种暂时的“不舒服”引发了你对体验的质疑，因而无法走入更深的地方。其实这是正常现象。
+      <br />三、我们的建议：
+      <br />无论你是选择放下过去的伤害，还是带着它继续前行，都是“爱的选择”，没有对错，但究竟选择什么，会对当下的你的人生会更好呢？当你准备好真正放下时，你可以再次走进课程，或者联系工作人员，去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“宽恕过去”体验，你将会深度放下过
+      去的伤害。对你内心平静和关系的改善大有好处。更重要的是不再让过去的阴影，损伤到你的未来人生的诸多可能。
+    </p>
+    <p class="aEqualB">
+      一、根据你的体验分数，在本次智能Axun带领的心智升级体验中，对于你渴望宽恕的TA，你的宽恕分数没有发生任何改变。
+      <br />二、下列原因，会减少你的体验收获：
+      <br />1.你可能没有真正决断放下。
+      <br />2.过程中，你没有跟随智能Axun深入感受每一步的体验，也许是你对这样的体验有评判不愿尝试，或者周围有打扰使你不够专注。你知道这就像是站在岸边看水，是无法学会游泳的。
+      <br />如果有以上原因，在下次体验时，请调整好自己的状态。
+      <br />三、我们的建议：
+      <br />无论你是选择放下过去的伤害，还是带着它继续前行，都是“爱的选择”，没有对错，但究竟选择什么，会对当下的你更好呢？当你准备好真正放下时，你可以再次走进课程，或者联系工作人员，去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“宽恕过去”体验，你将会深度放下过去的伤害。
+      对你内心平静和关系的改善大有好处。更重要的是不再让过去的阴影，损伤到你的未来人生的诸多可能。
+
+    </p>
+    <p class="less">
+      一、恭喜你在“爱的选择”的体验中，你对曾经不原谅、不宽恕、不放下的TA，在经过体验后，你的“宽恕”分数提升了<span id="less"></span>
+      <br />  二、你对于TA的伤害已经有所放下，不过或许你还希望放下更多，当你再次回忆过往时，如果感觉身体还是有一些不舒服。你可以再次走进课程，释放更深的情绪，或者联系工作人员，去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“宽恕过去”体验，你将会深度放下过去的伤害。对你内心平静和关系的改善大有好处。
+      <span class="less-third" style="display:none">
+        <br />三、此外，在体验中，下列原因可能会影响你进入更深度的体验：
+        <br />1.你可能没有真正决断放下。
+        <br />2.过程中，你没有跟随智能Axun深入感受每一步的体验，也许
+        是你对这样的体验有评判不愿尝试，或者周围有打扰使你不够专注。你知道这就像是站在岸边看水，是无法学会游泳的。
+      </span>
+    </p>
+    <p class="more">
+      一、恭喜你在“爱的选择”的体验中，你对曾经不原谅、不宽恕、不放下的TA，在经过体验后，你的“宽恕”分数提升了<span id="more"></span>
+      <br />二、对于TA在过去给你的伤害，恭喜你几乎都已经宽恕、放下了。即便在生活中，当你偶尔回忆，身体感受到有轻微的不舒服时，也不要紧。请唤起那个拥有源源不断的爱的自己，并且提问自己，此刻，爱会如何选择呢？智慧具足的你，一定会有答案。此外，如果在你心中还有想要放下的过去的伤害，你可以再次走进课程，或者联系工作人员，去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“宽恕过去”体验，你将会深度放下过去的伤害。对你内心平静和关系的改善大有好处。
+    </p>
+  </div>
+  <div class="question question2">
+    <p class="part-title">
+      幸福雷达测评
+    </p>
+    <div id="chart2">
+    </div>
+    <p>
+      这一次测评的是：你作为评估人，和四位最重视的关系人之间，对彼此关系的满意度，从两人两个世界来先后感知，看看在关系中，有哪些你所不知道
+      的情况存在。接下来是你和你提到的四位人生中最重要的人之间的关系。那么测评结果是：
+      <br />
+      <span class="title">第一段关系</span><br />
+      <span id="first_me"></span><br />
+      <span id="first_op"></span><br />
+      <span id="first_diff"></span><br />
+      <br />
+      <span class="title">第二段关系</span><br />
+      <span id="second_me"></span><br />
+      <span id="second_op"></span><br />
+      <span id="second_diff"></span><br />
+      <br />
+      <span class="title">第三段关系</span><br />
+      <span id="third_me"></span><br />
+      <span id="third_op"></span><br />
+      <span id="third_diff"></span><br />
+      <br />
+      <span class="title">第四段关系</span><br />
+      <span id="forth_me"></span><br />
+      <span id="forth_op"></span><br />
+      <span id="forth_diff"></span><br />
+    </p>
+  </div>
+  <div class="question question3">
+    <p class="part-title">
+      换椅思考体验
+    </p>
+    <div id="chart3">
+    </div>
+    <p>
+      在本次“换椅思考”体验中，对于在某一场景下，你希望放下的过去伤害你的人，
+      1分是彻底的不宽恕，不放下，感受非常不舒服。10分是你感受到生命获得了轻盈，获得了放下之后的轻松。
+      你在体验前的“放下”分数：<span id="before"></span> 
+      你在体验后的“放下”分数：<span id="after"></span>
+    </p>
+    <p class="before-over-after">
+      一、根据你的体验分数，在本次Axun带领的心智升级体验中，你的理解程度不仅没有提升还降低了。
+      <br />二、如果你不是和我们开玩笑的话。只有一种可能: 就是你进入了对方一部分，但是没有进入对方最深的内心，这使得你反而产生暂时的疑惑，这种暂时的疑惑引发了你对体验的质疑，因而无法走入更深的地方。其实这是正常现象。
+      <br />三、我们的建议：
+      <br />一人一词典，两人两世界。要想进入对方的世界，你需要放下过往的期待和评判，成为一个“不知道”的自己，才有可能“知道”对方的真实想法。
+      你可以再次来体验一次课程，或者联系工作人员，去完成一对一深度个案辅导、一小时“换塔思考”体验，你将会沉浸深入对方的内心世界。对双方的理解和关系改善大有好处。
+    </p>
+    <p class="before-equal-after">
+      一、根据你的体验分数，在本次Axun带领的心智升级体验中，对于你渴望理解的TA，你的理解分数没有发生任何改变。
+      <br />二、下列原因，会减少你的体验收获：
+      <br />1.你可能并不真正想走入他的世界。
+      <br />2.过程中，你没有跟随智能Axun深入感受每一步的体验，也许是你对这样的体验有评判不愿尝试，或者周围有打扰使你不够专注。你知道这就像是站在岸边看水，是无法学会游泳的。
+      如果有以上原因，在下次体验时，请调整好自己的状态。
+      <br />三、我们的建议：
+      <br />一人一词典，两人两世界。要想进入对方的世界，你需要放下过往的期待和评判，成为一个“不知道”的自己，才有可能“知道”对方的真实想法。
+      你可以再次来体验一次课程，或者联系工作人员，去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“换塔思考”体验，你将深入对方的内心世界。对双方的理解和关系改善大有好处。
+    </p>
+    <p class="before-smaller-after">
+      一、恭喜你在AXun带领的“换椅思考”的体验中，你对渴望理解的TA，在经过体验后，“理解”分数提升了<span id="less3"></span>
+      <br />  二、你已经对TA的言行有了更深一步的理解，不过你或许希望还能够了解更多。你可以选择再次体验课程，或者去完成一对一深度个案辅导，通过沉浸式的、私密的一小时“换塔
+      思考”体验，你将能深入走进对方的内心世界，对双方的理解和关系改善大有好处。
+      <span class="less3-third" style="display:none">
+        <br />三、此外，在体验中，下列原因可能会影响你进入更深度的体验：
+        <br />1.你还未决断真正走入TA的世界。
+        <br />2.在过程中，你没有跟随智能Axun深入感受每一步的体验，也许是你有评判，或者周围有影响使你不够专注。
+        如果有，在下次体验时，请调整好自己的状态。
+      </span>
+    </p>
+    <p class="more3">
+    一、恭喜你在“换椅思考”的体验中，你对渴望理解的TA，在经过体验后，你的“理解”分数提升了<span id="more3"></span>
+      <br />二、你几乎已经完全理解了TA的言行背后的动机和更深层次的原因，请记得在这次体验中，你获得的智慧，一人一世界，“不知道”是“知道”的开始，放下你的期待和评判，你才能真正进入对方的事情。祝福你能够在你和其他人的关系中，也能运用这样的智慧。建议你带着和这位关系人的其他不容易被你理解的场景，和你与其他人的关系，再次走进课程，或者去完成一对一深度个案辅导，通过沉浸式的
+      、私密的一小时“换塔思考”（深度进入他人内心世界）的体验，对双方的理解和关系改善大有好处。
+    </p>
+  </div>
+<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/echarts/3.2.3/echarts.min.js"></script>
+
+<script>
+  var myChart1 = echarts.init(document.getElementById('chart1'));
+  var option1 = {
+      title : {
+          text: '爱的选择',
+          // subtext: '纯属虚构'
+      },
+      tooltip : {
+          trigger: 'axis'
+      },
+      legend: {
+          data:['前测评','后测评']
+      },
+      toolbox: {
+          show : true,
+          feature : {
+              // dataView : {show: true, readOnly: false},
+              // magicType : {show: true, type: ['line', 'bar']},
+              // restore : {show: true},
+              // saveAsImage : {show: true}
+          }
+      },
+      calculable : true,
+      xAxis : [
+          {
+              type : 'category',
+              data : ['测评数据','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+          }
+      ],
+      yAxis : [
+          {
+              type : 'value'
+          }
+      ],
+      series : [
+          {
+              name:'前测评',
+              type:'bar',
+              data:[],
+          },
+          {
+              name:'后测评',
+              type:'bar',
+              data:[],
+          }
+      ]
+  };
+
+    var choice_test_before = <%= choice_test_before %>
+    var choice_test_after = <%= choice_test_after %>
+
+    option1.series[0].data.push(Number(choice_test_before))
+    option1.series[1].data.push(Number(choice_test_after))
+    myChart1.setOption(option1);
+
+    $('#A')[0].textContent = choice_test_before
+    $('#B')[0].textContent = choice_test_after
+    if (choice_test_before > choice_test_after) {
+      $(".aOverB").show()
+    }
+    if (choice_test_before == choice_test_after) {
+      $(".aEqualB").show()
+    }
+    if (choice_test_before < choice_test_after && choice_test_after <= 7) {
+      $('#less')[0].textContent= Number((Number((choice_test_after-choice_test_before)/choice_test_before).toFixed(2))).toFixed(2) * 100 + '%'
+      $(".less").show()
+      if (choice_test_after - choice_test_before <= 2) {
+        $(".less-third").show()
+      }
+    }
+    if (choice_test_before < choice_test_after && choice_test_after >= 8) {
+      $('#more')[0].textContent= Number((Number((choice_test_after-choice_test_before)/choice_test_before).toFixed(2))).toFixed(2) * 100 + '%'
+      $(".more").show()
+    }
+</script>
+
+<script>
+var option2 = {
+  title : {
+      text: '4X2体验',
+      // subtext: '纯属虚构',
+      x:'center'
+  },
+  tooltip : {
+      trigger: 'item',
+      formatter: "{a} <br/>{b} : {c} ({d}%)"
+  },
+  legend: {
+      x : 'center',
+      y : 'bottom',
+      data:['rose1','rose2','rose3','rose4','rose5','rose6','rose7','rose8']
+  },
+  toolbox: {
+      show : true,
+      feature : {
+          // mark : {show: true},
+          // dataView : {show: true, readOnly: false},
+          magicType : {
+              show: true,
+              type: ['pie', 'funnel']
+          },
+          // restore : {show: true},
+          // saveAsImage : {show: true}
+      }
+  },
+  calculable : true,
+  series : [
+      {
+          name:'面积模式',
+          type:'pie',
+          radius : [30, 110],
+          center : ['50%', '50%'],
+          roseType : 'area',
+          data:[
+              {value:10, name:'我对关系人一'},
+              {value:20, name:'关系人一对我'},
+              {value:5, name:'我对关系人二'},
+              {value:35, name:'关系人二对我'},
+              {value:15, name:'我对关系人三'},
+              {value:30, name:'关系人三对我'},
+              {value:25, name:'我对关系人四'},
+              {value:40, name:'关系人四对我'}
+          ]
+      }
+  ]
+};
+
+// 基于准备好的dom，初始化echarts实例
+var myChart2 = echarts.init(document.getElementById('chart2'));
+  var relationDescription0 = {
+    '0': '恭喜你，看起来你十分满意，这种感觉一定让你很喜欢和对方在一起。',
+    '1': '恭喜你，看起来你相当满意，作为你最最重视的人，能有这样的分值，你应该很享受这个关系，对方一定很棒，不是吗？',
+    '2': '这段关系你还算满意，不过，显然还有提升的空间，既然对方是你最最重视的人，应该花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福来源。',
+    '3': '这段关系看来不太理想，既然对方是你最最重视的人，应该认真花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福来源。',
+    '4':'这段关系看来非常不理想哦，既然对方是你最最重视的人，系统十分建议你立刻认真花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福来源。',
+    '5':'这段关系在你看来糟透了，一定每一次想到都会让你头疼，既然对方是你最最重视的人，系统十分建议你立刻认真花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福来源。'
+  }
+  var relationDescription1 = {
+    '0': '看起来对方十分满意，这种感觉一定让对方很喜欢和你在一起。',
+    '1': '看起来对方相当满意，作为对方最最重视的人，能有这样的分值，对方应该很享受这个关系，你一定很棒，不是吗？',
+    '2': '这段关系对方还算满意，不过，显然还有提升的空间，既然对方是你最最重视的人，应该花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福质量。',
+    '3': '这段关系看来不太理想，既然对方是你最最重视的人，应该认真花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福质量。',
+    '4':'这段关系看来非常不理想哦，既然对方是你最最重视的人，应该花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福质量。',
+    '5':'这段关系在对方看来糟透了，一定每一次想到都会让对方头疼，既然对方是你最最重视的人，系统十分建议你立刻解决这一问题，认真花一些时间研究如何提升这一关系的链接质量，因为这决定了你的幸福质量。'
+  }
+  var exceptions = {
+    '0': '系统检测出来的一个不太好的消息：看起来你非常不满意对方，而且值得重视的是，在你不满意的同时，对方似乎不太受到你的冷漠态度的影响，发生这样的情况有两种可能：要么你太会隐藏你的不满，要么对方对你的爱是无条件的。你不仅应该更加珍视这段关系，并应该尽快改善，将你自己内心的不满，以科学的方式进行沟通，否则这种情感天平失衡的状态在未来是难以长久的。',
+    '1':'这个关系中存在一个信息值得你高度重视：相比对方而言，你对这个关系更加不满意，而且很明显，这就意味着，你和对方的沟通存在较大的问题，如果对方是你生命中如此重要的人，那么这种情况就是在消耗你自己的幸福感，因为幸福感主要来自重要关系的链接质量。同时，如果你不太擅长遮掩自己的情绪，这个关系会受到你不知不觉中的伤害。既然对方如此重要，请重视此情况，采取科学措施，避免日后才发觉有更多的遗憾。',
+    '2':'这一关系中存在一个信息值得你要重视起来：相比对方而言，你对这个关系更不满意，这就意味着，你和对方的沟通存在一定的问题，如果对方是你生命中如此重要的人，那么这种情况就是在消耗你自己的幸福感，因为幸福感主要来自重要关系的链接质量。同时，如果你不太擅长遮掩自己的态度，这个关系会受到你不知不觉中的损伤。既然对方如此重要，请重视此情况，采取科学措施，避免日后引发更多的遗憾。',
+    '3':'这个关系中存在一个有趣的信息，你和对方看待这个关系的满意度竟然相同，这比较少见，出现这种情况有两种可能，如果不是你懒得进入对方的世界深入体验和思考，那就是你们之间的关系彼此很真实坦诚，没有什么隐藏。',
+    '4':'此关系中存在一个信息值得你要重视起来：相比你而言，对方对这个关系更不满意，这就意味着，你和对方的沟通存在一定的问题，如果对方是你生命中如此重要的人，那么这种情况就是在消耗你自己的幸福感，因为幸福感主要来自重要关系的链接质量。同时，如果对方不太擅长遮掩自己的情绪，这个关系会受到对方不知不觉中的损伤。既然对方如此重要，请重视此情况，采取措施，增加科学有效的沟通，避免日后引发更多的遗憾。',
+    '5':'此关系中有一个信息值得你要重视起来：相比你而言，对方对这个关系更不满意，这就意味着，你和对方的沟通存在一定的问题，如果对方是你生命中如此重要的人，那么这种情况就是在消耗你自己的幸福感，因为幸福感主要来自重要关系的链接质量。同时，如果对方不太擅长遮掩自己的情绪，你会受到对方不知不觉中的隐形的伤害。既然对方如此重要，请重视此情况，采取措施，增加科学有效的沟通，避免日后引发更多的遗憾。',
+    '6':'系统检测出来的一个不太好的消息：看起来对方非常不满意你，而且值得重视的是，在对方不满意的同时，你似乎不太受到对方的冷漠态度的影响，发生这样的情况有两种可能：要么对方太会隐藏自己的不满，要么你对对方的爱是无条件的。你不仅应该更加珍视这段关系，并应该尽快改善，用科学有效的沟通，找到让对方内心不满的深层原因，否则这种情感天平失衡的状态在未来是难以长久的。'
+  }
+  //分数映射
+  var map1 = [
+    [10],
+    [9,8],
+    [7,6],
+    [4,5],
+    [2,3],
+    [1]
+  ]
+  //分数映射
+  var map2 = [
+    [-4,-5,-6,-7,-8,-9,-10],
+    [-2,-3],
+    [-1],
+    [0],
+    [1],
+    [2,3],
+    [4,5,6,7,8,9,10],
+  ]
+    var relation_person1_me = <%= relation_person1_me %>
+    var relation_person1_opposite = <%= relation_person1_opposite %>
+    var relation_person2_me = <%= relation_person2_me %>
+    var relation_person2_opposite = <%= relation_person2_opposite %>
+    var relation_person3_me = <%= relation_person3_me %>
+    var relation_person3_opposite = <%= relation_person3_opposite %>
+    var relation_person4_me = <%= relation_person4_me %>
+    var relation_person4_opposite = <%= relation_person4_opposite %>
+
+    var gradeArray = [
+      relation_person1_me,
+            relation_person1_opposite,
+      relation_person2_me,
+            relation_person2_opposite,
+      relation_person3_me,
+            relation_person3_opposite,
+      relation_person4_me,
+      relation_person4_opposite
+    ]
+    option2.series[0].data.forEach(function(value, index) {
+      value.value = gradeArray[index]
+      value.name = value.name + '(' + gradeArray[index] + ')'
+    })
+    myChart2.setOption(option2);
+
+
+    var first = relation_person1_me - relation_person1_opposite
+    var second = relation_person2_me - relation_person2_opposite
+    var third = relation_person3_me - relation_person3_opposite
+    var forth = relation_person4_me - relation_person4_opposite
+    map1.forEach(function(value, index){
+      if (value.indexOf((Number(relation_person1_me))) != -1) {
+        $('#first_me')[0].textContent = (relationDescription0[index])
+      }
+      if (value.indexOf((Number(relation_person1_opposite))) != -1) {
+        $('#first_op')[0].textContent = (relationDescription1[index])
+      }
+      if (value.indexOf((Number(relation_person2_me))) != -1) {
+        $('#second_me')[0].textContent = (relationDescription0[index])
+      }
+      if (value.indexOf((Number(relation_person2_opposite))) != -1) {
+        $('#second_op')[0].textContent = (relationDescription1[index])
+      }
+      if (value.indexOf((Number(relation_person3_me))) != -1) {
+        $('#third_me')[0].textContent = (relationDescription0[index])
+      }
+      if (value.indexOf((Number(relation_person3_opposite))) != -1) {
+        $('#third_op')[0].textContent = (relationDescription1[index])
+      }
+      if (value.indexOf((Number(relation_person4_me))) != -1) {
+        $('#forth_me')[0].textContent = (relationDescription0[index])
+      }
+      if (value.indexOf((Number(relation_person4_opposite))) != -1) {
+        $('#forth_op')[0].textContent = (relationDescription1[index])
+      }
+    })
+    map2.forEach(function(value, index){
+      if (value.indexOf(first) != -1) {
+        $('#first_diff')[0].textContent = (exceptions[index])
+      }
+      if (value.indexOf(second) != -1) {
+        $('#second_diff')[0].textContent = (exceptions[index])
+      }
+      if (value.indexOf(third) != -1) {
+        $('#third_diff')[0].textContent = (exceptions[index])
+      }
+      if (value.indexOf(forth) != -1) {
+        $('#forth_diff')[0].textContent = (exceptions[index])
+      }
+    })
+</script>
+<script>
+
+option3 = {
+    title : {
+        text: '换椅思考',
+        // subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['前测评','后测评']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            // dataView : {show: true, readOnly: false},
+            // magicType : {show: true, type: ['line', 'bar']},
+            // restore : {show: true},
+            // saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['测评数据','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'前测评',
+            type:'bar',
+            data:[],
+        },
+        {
+            name:'后测评',
+            type:'bar',
+            data:[],
+        }
+    ]
+};
+var myChart3 = echarts.init(document.getElementById('chart3'));
+
+  var change_chair_test_before = <%= change_chair_test_before%>
+  var change_chair_test_after = <%= change_chair_test_after%>
+
+  $('#before')[0].textContent = change_chair_test_before
+  $('#after')[0].textContent = change_chair_test_after
+
+  option3.series[0].data.push(Number(change_chair_test_before))
+  option3.series[1].data.push(Number(change_chair_test_after))
+  myChart3.setOption(option3);
+
+  if (change_chair_test_before > change_chair_test_after) {
+    $(".before-over-after").show()
+  }
+  if (change_chair_test_before == change_chair_test_after) {
+    $(".before-equal-after").show()
+  }
+  if (change_chair_test_before < change_chair_test_after && change_chair_test_after <= 7) {
+    $('#less3')[0].textContent= Number((Number((change_chair_test_after-change_chair_test_before)/change_chair_test_before).toFixed(2)) * 100).toFixed(2) + '%'
+    $(".less3").show()
+    if (change_chair_test_before - change_chair_test_after <= 2) {
+      $(".less3-third").show()
+    }
+  }
+  if (change_chair_test_before < change_chair_test_after && change_chair_test_after >= 8) {
+    $('#more3')[0].textContent= Number((Number((change_chair_test_after-change_chair_test_before)/change_chair_test_before).toFixed(2) * 100)).toFixed(2) + '%'
+    $(".more3").show()
+  }
+</script>
+</body>
+</html>
